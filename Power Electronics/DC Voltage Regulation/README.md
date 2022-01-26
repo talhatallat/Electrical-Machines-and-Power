@@ -32,3 +32,6 @@ constraints (various ripples etc) specified and all calculations should be shown
     <td>20</td>
   </tr>
 </table>
+
+## Issues
+!! There could be errors in the report.
