@@ -14,7 +14,7 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  • Derive the equivalent circuit of an induction  machine from known machine tests.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  • Analyse behaviour of induction machineunder load conditions.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  • Understand the implementation of passive and static power factor correction.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  • Describe the use of inverters in variable speed induction motor drives. To explain the torque speed capability of an induction &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;motor with a variable frequency variable voltage inverter.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  • Describe the use of inverters in variable speed induction motor drives. To explain the torque speed capability of an induction motor with a variable frequency variable voltage inverter.</p>
 
 • The ability to undertake laboratory experiments on the material of the course, to record and analyse the results of these experiments and to present the outcomes in technical reports. 
 
