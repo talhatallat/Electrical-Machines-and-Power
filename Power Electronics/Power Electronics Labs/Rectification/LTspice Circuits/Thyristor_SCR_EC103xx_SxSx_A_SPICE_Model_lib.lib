@@ -1,0 +1,301 @@
+**********************************
+**********************************
+**
+** Littelfuse, LP
+** SCR SPICE Models
+** EC103xx-SxSx
+**
+** T. Chenoski
+** Irving Technical Center
+**
+** A 06/13/08
+**
+**********************************
+**********************************
+.SUBCKT EC103D1    1  2             3
+*       TERMINALS: A  G             K
+Qpnp    6          4  1             Pfor      OFF
+Qnpn    4          6  5             Nfor      OFF
+Rfor    6          4  5G
+Rrev    1          4  5G
+Rshort  6          5  1MEG
+Rlat    2          6  9.09
+Ron     3          5  513.4m
+Dfor    6          4  Zbrk
+Drev    1          4  Zbrk
+Dgate   6          5  Zgate
+.MODEL  Zbrk       D  (IS=3.2E-16   IBV=100U  BV=400)
+.MODEL  Zgate      D  (IS=1E-16     IBV=100U  BV=10      VJ=0.3)
+.MODEL  Pfor       PNP(IS=5E-15     BF=6.10   CJE=5p     CJC=2p     TF=0.3U)
+.MODEL  Nfor       NPN(IS=1E-12     ISE=1E-9  BF=10.0    RC=0.45    CJE=30p     CJC=2p      TF=0.3U)
+.ENDS
+
+.SUBCKT EC103M1    1  2             3
+*       TERMINALS: A  G             K
+Qpnp    6          4  1             Pfor      OFF
+Qnpn    4          6  5             Nfor      OFF
+Rfor    6          4  5G
+Rrev    1          4  5G
+Rshort  6          5  1MEG
+Rlat    2          6  9.09
+Ron     3          5  513.4m
+Dfor    6          4  Zbrk
+Drev    1          4  Zbrk
+Dgate   6          5  Zgate
+.MODEL  Zbrk       D  (IS=3.2E-16   IBV=100U  BV=600)
+.MODEL  Zgate      D  (IS=1E-16     IBV=100U  BV=10      VJ=0.3)
+.MODEL  Pfor       PNP(IS=5E-15     BF=6.10   CJE=5p     CJC=2p     TF=0.3U)
+.MODEL  Nfor       NPN(IS=1E-12     ISE=1E-9  BF=10.0    RC=0.45    CJE=30p     CJC=2p      TF=0.3U)
+.ENDS
+
+.SUBCKT EC103D2    1  2             3
+*       TERMINALS: A  G             K
+Qpnp    6          4  1             Pfor      OFF
+Qnpn    4          6  5             Nfor      OFF
+Rfor    6          4  5G
+Rrev    1          4  5G
+Rshort  6          5  1MEG
+Rlat    2          6  9.09
+Ron     3          5  513.4m
+Dfor    6          4  Zbrk
+Drev    1          4  Zbrk
+Dgate   6          5  Zgate
+.MODEL  Zbrk       D  (IS=3.2E-16   IBV=100U  BV=400)
+.MODEL  Zgate      D  (IS=1E-16     IBV=100U  BV=10      VJ=0.3)
+.MODEL  Pfor       PNP(IS=5E-15     BF=2.20   CJE=5p     CJC=2p     TF=0.3U)
+.MODEL  Nfor       NPN(IS=1E-12     ISE=1E-9  BF=10.0    RC=0.45    CJE=30p     CJC=2p      TF=0.3U)
+.ENDS
+
+.SUBCKT EC103M2    1  2             3
+*       TERMINALS: A  G             K
+Qpnp    6          4  1             Pfor      OFF
+Qnpn    4          6  5             Nfor      OFF
+Rfor    6          4  5G
+Rrev    1          4  5G
+Rshort  6          5  1MEG
+Rlat    2          6  9.09
+Ron     3          5  513.4m
+Dfor    6          4  Zbrk
+Drev    1          4  Zbrk
+Dgate   6          5  Zgate
+.MODEL  Zbrk       D  (IS=3.2E-16   IBV=100U  BV=600)
+.MODEL  Zgate      D  (IS=1E-16     IBV=100U  BV=10      VJ=0.3)
+.MODEL  Pfor       PNP(IS=5E-15     BF=2.20   CJE=5p     CJC=2p     TF=0.3U)
+.MODEL  Nfor       NPN(IS=1E-12     ISE=1E-9  BF=10.0    RC=0.45    CJE=30p     CJC=2p      TF=0.3U)
+.ENDS
+
+.SUBCKT EC103D     1  2             3
+*       TERMINALS: A  G             K
+Qpnp    6          4  1             Pfor      OFF
+Qnpn    4          6  5             Nfor      OFF
+Rfor    6          4  5G
+Rrev    1          4  5G
+Rshort  6          5  1MEG
+Rlat    2          6  9.09
+Ron     3          5  513.4m
+Dfor    6          4  Zbrk
+Drev    1          4  Zbrk
+Dgate   6          5  Zgate
+.MODEL  Zbrk       D  (IS=3.2E-16   IBV=100U  BV=400)
+.MODEL  Zgate      D  (IS=1E-16     IBV=100U  BV=10      VJ=0.3)
+.MODEL  Pfor       PNP(IS=5E-15     BF=1.10   CJE=5p     CJC=2p     TF=0.3U)
+.MODEL  Nfor       NPN(IS=1E-12     ISE=1E-9  BF=10.0    RC=0.45    CJE=30p     CJC=2p      TF=0.3U)
+.ENDS
+
+.SUBCKT EC103M     1  2             3
+*       TERMINALS: A  G             K
+Qpnp    6          4  1             Pfor      OFF
+Qnpn    4          6  5             Nfor      OFF
+Rfor    6          4  5G
+Rrev    1          4  5G
+Rshort  6          5  1MEG
+Rlat    2          6  9.09
+Ron     3          5  513.4m
+Dfor    6          4  Zbrk
+Drev    1          4  Zbrk
+Dgate   6          5  Zgate
+.MODEL  Zbrk       D  (IS=3.2E-16   IBV=100U  BV=600)
+.MODEL  Zgate      D  (IS=1E-16     IBV=100U  BV=10      VJ=0.3)
+.MODEL  Pfor       PNP(IS=5E-15     BF=1.10   CJE=5p     CJC=2p     TF=0.3U)
+.MODEL  Nfor       NPN(IS=1E-12     ISE=1E-9  BF=10.0    RC=0.45    CJE=30p     CJC=2p      TF=0.3U)
+.ENDS
+
+.SUBCKT EC103D3    1  2             3
+*       TERMINALS: A  G             K
+Qpnp    6          4  1             Pfor      OFF
+Qnpn    4          6  5             Nfor      OFF
+Rfor    6          4  5G
+Rrev    1          4  5G
+Rshort  6          5  1MEG
+Rlat    2          6  9.09
+Ron     3          5  513.4m
+Dfor    6          4  Zbrk
+Drev    1          4  Zbrk
+Dgate   6          5  Zgate
+.MODEL  Zbrk       D  (IS=3.2E-16   IBV=100U  BV=400)
+.MODEL  Zgate      D  (IS=1E-16     IBV=100U  BV=10      VJ=0.3)
+.MODEL  Pfor       PNP(IS=5E-15     BF=0.95   CJE=5p     CJC=2p     TF=0.3U)
+.MODEL  Nfor       NPN(IS=1E-12     ISE=1E-9  BF=10.0    RC=0.45    CJE=30p     CJC=2p      TF=0.3U)
+.ENDS
+
+.SUBCKT EC103M3    1  2             3
+*       TERMINALS: A  G             K
+Qpnp    6          4  1             Pfor      OFF
+Qnpn    4          6  5             Nfor      OFF
+Rfor    6          4  5G
+Rrev    1          4  5G
+Rshort  6          5  1MEG
+Rlat    2          6  9.09
+Ron     3          5  513.4m
+Dfor    6          4  Zbrk
+Drev    1          4  Zbrk
+Dgate   6          5  Zgate
+.MODEL  Zbrk       D  (IS=3.2E-16   IBV=100U  BV=600)
+.MODEL  Zgate      D  (IS=1E-16     IBV=100U  BV=10      VJ=0.3)
+.MODEL  Pfor       PNP(IS=5E-15     BF=0.95   CJE=5p     CJC=2p     TF=0.3U)
+.MODEL  Nfor       NPN(IS=1E-12     ISE=1E-9  BF=10.0    RC=0.45    CJE=30p     CJC=2p      TF=0.3U)
+.ENDS
+
+.SUBCKT S4S1       1  2             3
+*       TERMINALS: A  G             K
+Qpnp    6          4  1             Pfor      OFF
+Qnpn    4          6  5             Nfor      OFF
+Rfor    6          4  5G
+Rrev    1          4  5G
+Rshort  6          5  1MEG
+Rlat    2          6  9.09
+Ron     3          5  513.4m
+Dfor    6          4  Zbrk
+Drev    1          4  Zbrk
+Dgate   6          5  Zgate
+.MODEL  Zbrk       D  (IS=3.2E-16   IBV=100U  BV=400)
+.MODEL  Zgate      D  (IS=1E-16     IBV=100U  BV=10      VJ=0.3)
+.MODEL  Pfor       PNP(IS=5E-15     BF=6.10   CJE=5p     CJC=2p     TF=0.3U)
+.MODEL  Nfor       NPN(IS=1E-12     ISE=1E-9  BF=10.0    RC=0.45    CJE=30p     CJC=2p      TF=0.3U)
+.ENDS
+
+.SUBCKT S6S1       1  2             3
+*       TERMINALS: A  G             K
+Qpnp    6          4  1             Pfor      OFF
+Qnpn    4          6  5             Nfor      OFF
+Rfor    6          4  5G
+Rrev    1          4  5G
+Rshort  6          5  1MEG
+Rlat    2          6  9.09
+Ron     3          5  513.4m
+Dfor    6          4  Zbrk
+Drev    1          4  Zbrk
+Dgate   6          5  Zgate
+.MODEL  Zbrk       D  (IS=3.2E-16   IBV=100U  BV=600)
+.MODEL  Zgate      D  (IS=1E-16     IBV=100U  BV=10      VJ=0.3)
+.MODEL  Pfor       PNP(IS=5E-15     BF=6.10   CJE=5p     CJC=2p     TF=0.3U)
+.MODEL  Nfor       NPN(IS=1E-12     ISE=1E-9  BF=10.0    RC=0.45    CJE=30p     CJC=2p      TF=0.3U)
+.ENDS
+
+.SUBCKT S4S2       1  2             3
+*       TERMINALS: A  G             K
+Qpnp    6          4  1             Pfor      OFF
+Qnpn    4          6  5             Nfor      OFF
+Rfor    6          4  5G
+Rrev    1          4  5G
+Rshort  6          5  1MEG
+Rlat    2          6  9.09
+Ron     3          5  513.4m
+Dfor    6          4  Zbrk
+Drev    1          4  Zbrk
+Dgate   6          5  Zgate
+.MODEL  Zbrk       D  (IS=3.2E-16   IBV=100U  BV=400)
+.MODEL  Zgate      D  (IS=1E-16     IBV=100U  BV=10      VJ=0.3)
+.MODEL  Pfor       PNP(IS=5E-15     BF=2.20   CJE=5p     CJC=2p     TF=0.3U)
+.MODEL  Nfor       NPN(IS=1E-12     ISE=1E-9  BF=10.0    RC=0.45    CJE=30p     CJC=2p      TF=0.3U)
+.ENDS
+
+.SUBCKT S6S2       1  2             3
+*       TERMINALS: A  G             K
+Qpnp    6          4  1             Pfor      OFF
+Qnpn    4          6  5             Nfor      OFF
+Rfor    6          4  5G
+Rrev    1          4  5G
+Rshort  6          5  1MEG
+Rlat    2          6  9.09
+Ron     3          5  513.4m
+Dfor    6          4  Zbrk
+Drev    1          4  Zbrk
+Dgate   6          5  Zgate
+.MODEL  Zbrk       D  (IS=3.2E-16   IBV=100U  BV=600)
+.MODEL  Zgate      D  (IS=1E-16     IBV=100U  BV=10      VJ=0.3)
+.MODEL  Pfor       PNP(IS=5E-15     BF=2.20   CJE=5p     CJC=2p     TF=0.3U)
+.MODEL  Nfor       NPN(IS=1E-12     ISE=1E-9  BF=10.0    RC=0.45    CJE=30p     CJC=2p      TF=0.3U)
+.ENDS
+
+.SUBCKT S4S        1  2             3
+*       TERMINALS: A  G             K
+Qpnp    6          4  1             Pfor      OFF
+Qnpn    4          6  5             Nfor      OFF
+Rfor    6          4  5G
+Rrev    1          4  5G
+Rshort  6          5  1MEG
+Rlat    2          6  9.09
+Ron     3          5  513.4m
+Dfor    6          4  Zbrk
+Drev    1          4  Zbrk
+Dgate   6          5  Zgate
+.MODEL  Zbrk       D  (IS=3.2E-16   IBV=100U  BV=400)
+.MODEL  Zgate      D  (IS=1E-16     IBV=100U  BV=10      VJ=0.3)
+.MODEL  Pfor       PNP(IS=5E-15     BF=1.10   CJE=5p     CJC=2p     TF=0.3U)
+.MODEL  Nfor       NPN(IS=1E-12     ISE=1E-9  BF=10.0    RC=0.45    CJE=30p     CJC=2p      TF=0.3U)
+.ENDS
+
+.SUBCKT S6S        1  2             3
+*       TERMINALS: A  G             K
+Qpnp    6          4  1             Pfor      OFF
+Qnpn    4          6  5             Nfor      OFF
+Rfor    6          4  5G
+Rrev    1          4  5G
+Rshort  6          5  1MEG
+Rlat    2          6  9.09
+Ron     3          5  513.4m
+Dfor    6          4  Zbrk
+Drev    1          4  Zbrk
+Dgate   6          5  Zgate
+.MODEL  Zbrk       D  (IS=3.2E-16   IBV=100U  BV=600)
+.MODEL  Zgate      D  (IS=1E-16     IBV=100U  BV=10      VJ=0.3)
+.MODEL  Pfor       PNP(IS=5E-15     BF=1.10   CJE=5p     CJC=2p     TF=0.3U)
+.MODEL  Nfor       NPN(IS=1E-12     ISE=1E-9  BF=10.0    RC=0.45    CJE=30p     CJC=2p      TF=0.3U)
+.ENDS
+
+.SUBCKT S4S3       1  2             3
+*       TERMINALS: A  G             K
+Qpnp    6          4  1             Pfor      OFF
+Qnpn    4          6  5             Nfor      OFF
+Rfor    6          4  5G
+Rrev    1          4  5G
+Rshort  6          5  1MEG
+Rlat    2          6  9.09
+Ron     3          5  513.4m
+Dfor    6          4  Zbrk
+Drev    1          4  Zbrk
+Dgate   6          5  Zgate
+.MODEL  Zbrk       D  (IS=3.2E-16   IBV=100U  BV=400)
+.MODEL  Zgate      D  (IS=1E-16     IBV=100U  BV=10      VJ=0.3)
+.MODEL  Pfor       PNP(IS=5E-15     BF=0.95   CJE=5p     CJC=2p     TF=0.3U)
+.MODEL  Nfor       NPN(IS=1E-12     ISE=1E-9  BF=10.0    RC=0.45    CJE=30p     CJC=2p      TF=0.3U)
+.ENDS
+
+.SUBCKT S6S3       1  2             3
+*       TERMINALS: A  G             K
+Qpnp    6          4  1             Pfor      OFF
+Qnpn    4          6  5             Nfor      OFF
+Rfor    6          4  5G
+Rrev    1          4  5G
+Rshort  6          5  1MEG
+Rlat    2          6  9.09
+Ron     3          5  513.4m
+Dfor    6          4  Zbrk
+Drev    1          4  Zbrk
+Dgate   6          5  Zgate
+.MODEL  Zbrk       D  (IS=3.2E-16   IBV=100U  BV=600)
+.MODEL  Zgate      D  (IS=1E-16     IBV=100U  BV=10      VJ=0.3)
+.MODEL  Pfor       PNP(IS=5E-15     BF=0.95   CJE=5p     CJC=2p     TF=0.3U)
+.MODEL  Nfor       NPN(IS=1E-12     ISE=1E-9  BF=10.0    RC=0.45    CJE=30p     CJC=2p      TF=0.3U)
+.ENDS
