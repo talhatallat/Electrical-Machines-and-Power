@@ -1,0 +1,23 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal 80 64 -81 -63
+SYMATTR Prefix X
+SYMATTR SpiceModel dqo2abc
+PIN -80 -32 LEFT 8
+PINATTR PinName Vd
+PINATTR SpiceOrder 1
+PIN -80 32 LEFT 8
+PINATTR PinName Vq
+PINATTR SpiceOrder 3
+PIN -80 0 LEFT 8
+PINATTR PinName Vo
+PINATTR SpiceOrder 2
+PIN 80 -32 RIGHT 8
+PINATTR PinName Va
+PINATTR SpiceOrder 4
+PIN 80 0 RIGHT 8
+PINATTR PinName Vb
+PINATTR SpiceOrder 5
+PIN 80 32 RIGHT 8
+PINATTR PinName Vc
+PINATTR SpiceOrder 6
