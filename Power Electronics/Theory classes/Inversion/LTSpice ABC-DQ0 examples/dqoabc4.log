@@ -1,0 +1,21 @@
+Circuit: * C:\users\frank\My Documents\notes\2020-2021\EMandPE\LTSpice\dqoabc\dqoabc4.asc
+
+Per .tran options, skipping operating point for transient analysis.
+
+Date: Thu Nov 12 15:16:18 2020
+Total elapsed time: 1.197 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 216097
+traniter = 216097
+tranpoints = 72069
+accept = 48028
+rejected = 24041
+matrix size = 52
+fillins = 0
+solver = Normal
+Matrix Compiler1: 1.49 KB object code size  0.5/0.3/[0.1]
+Matrix Compiler2: 3.07 KB object code size  0.4/0.6/[0.2]
+

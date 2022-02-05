@@ -1,0 +1,25 @@
+* DQO To ABC Transformer
+.subckt dqo2abc Vd Vo Vq Va Vb Vc
+V1 SinT 0 SINE(0 1 50)
+V2 SinTMinus 0 SINE(0 1 50 0 0 -120)
+V3 SinTPlus 0 SINE(0 1 50 0 0 120)
+V4 CosT 0 SINE(0 1 50 0 0 90)
+V5 CosTMinus 0 SINE(0 1 50 0 0 -30)
+V6 CosTPlus 0 SINE(0 1 50 0 0 210)
+R1 SinT 0 1k
+R2 SinTMinus 0 1k
+R3 SinTPlus 0 1k
+R4 CosT 0 1k
+R5 CosTMinus 0 1k
+R6 CosTPlus 0 1k
+B§Va1 Va 0 V=0.816496581*(V(CosT)*V(Vd)+V(SinT)*V(Vq)+0.7071*V(Vo))
+B§Vb1 Vb 0 V=0.816496581*(V(CosTMinus)*V(Vd)+V(SinTMinus)*V(Vq)+0.7071*V(Vo))
+B§Vc1 Vc 0 V=0.816496581*(V(CosTPlus)*V(Vd)+V(SinTPlus)*V(Vq)+0.7071*V(Vo))
+R7 Va 0 1k
+R8 Vb 0 1k
+R9 Vc 0 1k
+R10 Vd 0 1k
+R11 Vq 0 1k
+R12 Vo 0 1k
+.ends dqoabc
+

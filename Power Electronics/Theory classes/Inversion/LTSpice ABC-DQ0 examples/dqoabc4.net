@@ -1,0 +1,25 @@
+* C:\users\frank\My Documents\notes\2020-2021\EMandPE\LTSpice\dqoabc\dqoabc4.asc
+XU1 N008 0 N010 N004 N005 N009 dqo2abc
+XU2 N011 N013 N012 N014 N015 N016 abc2dqo
+V1 N003 0 SINE(0 1 50 0 0 330)
+V2 N002 0 SINE(0 1 50 0 0 210)
+V3 N001 0 SINE(0 1 50 0 0 90)
+R2 0 N013 1
+R3 0 N012 1
+R4 0 N011 1
+L1 VrLoad N011 10mH
+L2 N006 N012 10mH
+L3 N007 N013 10mH
+V4 N008 0 0
+L7 N001 VrLoad 1mH
+L8 N002 N006 1mH
+L9 N003 N007 1mH
+Vcontrol N010 0 1
+L4 N004 VrLoad 1mH
+L5 N005 N006 1mH
+L6 N009 N007 1mH
+.tran 20 startup uic
+.lib dqo2abc.lib
+.lib abc2dqo.lib
+.backanno
+.end

@@ -1,0 +1,17 @@
+* C:\users\frank\My Documents\notes\2020-2021\EMandPE\LTSpice\dqoabc\Draft1.asc
+Vr N001 0 SINE(0 1 50)
+Vs N003 0 SINE(0 1 50 0 0 120)
+Vt N005 0 SINE(0 1 50 0 0 240)
+L1 N001 N002 1mH
+L2 N003 N004 1mH
+L3 N005 N006 1mH
+R3 N006 0 10
+R2 N004 0 10
+R1 N002 0 10
+L4 N006 0 100mH
+L5 N004 0 100mH
+L6 N002 0 100mH
+* Line inductance
+.tran 200m startup uic
+.backanno
+.end
