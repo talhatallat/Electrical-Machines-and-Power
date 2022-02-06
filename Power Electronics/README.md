@@ -12,4 +12,6 @@
 ![image](https://user-images.githubusercontent.com/73076876/151287929-a4a1a0b5-885a-4f33-9f5f-4754ba20944e.png)
 
 
+## [how does induction motor works](https://www.youtube.com/watch?v=AQqyGNOP_3o)
+
 
